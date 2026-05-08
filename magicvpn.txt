@@ -5,7 +5,7 @@
   "Servers": [
     {
       "Id": "example-ssh-direct",
-      "Name": "Example SSH Direct",
+      "Name": "Test SSH Direct",
       "Region": "Developer Template",
       "Method": "SSH_DIRECT",
       "ServerIP": "23.227.187.245",
