@@ -1,0 +1,61 @@
+{
+  "Version": "1.0",
+  "ReleaseNotes": "Initial MagicVPN GitHub profile list.",
+  "UpdatedAt": "2026-05-08",
+  "Servers": [
+    {
+      "Id": "example-ssh-direct",
+      "Name": "Example SSH Direct",
+      "Region": "Developer Template",
+      "Method": "SSH_DIRECT",
+      "ServerIP": "example.com",
+      "ServerPort": "22",
+      "ServerUser": "user",
+      "ServerPass": "password",
+      "SNI": "",
+      "Payload": "",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "isSSL": false,
+      "isInject": false,
+      "isudp": false,
+      "Enabled": true
+    },
+    {
+      "Id": "example-ssh-ssl",
+      "Name": "Example SSH + SSL",
+      "Region": "Developer Template",
+      "Method": "SSH_SSL",
+      "ServerIP": "ssl.example.com",
+      "ServerPort": "443",
+      "ServerUser": "user",
+      "ServerPass": "password",
+      "SNI": "ssl.example.com",
+      "Payload": "",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "isSSL": true,
+      "isInject": false,
+      "isudp": false,
+      "Enabled": true
+    },
+    {
+      "Id": "example-payload-proxy-ssl",
+      "Name": "Example Payload + Proxy + SSL",
+      "Region": "Developer Template",
+      "Method": "SSH_PAYLOAD_PROXY_SSL",
+      "ServerIP": "ssh.example.com",
+      "ServerPort": "443",
+      "ServerUser": "user",
+      "ServerPass": "password",
+      "SNI": "sni.example.com",
+      "Payload": "CONNECT [host_port] [protocol][crlf][crlf]",
+      "ProxyIP": "proxy.example.com",
+      "ProxyPort": "8080",
+      "isSSL": true,
+      "isInject": true,
+      "isudp": false,
+      "Enabled": true
+    }
+  ]
+}
